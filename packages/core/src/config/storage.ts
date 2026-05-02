@@ -229,6 +229,10 @@ export class Storage {
     return path.join(this.getQwenDir(), 'commands');
   }
 
+  getProjectExpertsDir(): string {
+    return path.join(this.getQwenDir(), 'experts');
+  }
+
   getProjectTempCheckpointsDir(): string {
     return path.join(this.getProjectTempDir(), 'checkpoints');
   }
